@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Testing & Quality
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# Databases & Local persistence
+*.db
+*.sqlite
+*.sqlite3
+
+# Datasets
+creditcard.csv
+*.csv
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Local/generated model artifacts
+# Baseline runtime artifacts are explicitly allowed below.
+# The large LOF model is managed by Git LFS.
+models/artifacts/*
+!models/artifacts/evaluation_metrics.json
+!models/artifacts/*.joblib
+!models/artifacts/*_metadata.json
+!models/artifacts/.gitkeep
+
+# Advanced runtime artifacts
+!models/advanced_artifacts/
+models/advanced_artifacts/*
+!models/advanced_artifacts/*.joblib
+!models/advanced_artifacts/*_metadata.json
+!models/advanced_artifacts/advanced_evaluation_metrics.json
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Local development screenshots / experiments
+scratch/
+
+# Internal development session notes
+SESSION-LOG.md

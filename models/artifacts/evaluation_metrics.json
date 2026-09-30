@@ -1,0 +1,134 @@
+{
+  "dataset": {
+    "total_rows": 284807,
+    "train_rows": 199364,
+    "val_rows": 42721,
+    "test_rows": 42722,
+    "train_fraud": 384,
+    "val_fraud": 56,
+    "test_fraud": 52,
+    "scale_pos_weight": 518.1770833333334
+  },
+  "runtimes_sec": {
+    "logistic_regression": 1.68,
+    "random_forest": 24.05,
+    "xgboost": 2.82,
+    "isolation_forest": 0.76,
+    "lof": 71.18
+  },
+  "hybrid_configuration": {
+    "weights": {
+      "xgboost": 0.8,
+      "isolation_forest": 0.1,
+      "lof": 0.1
+    },
+    "validation_pr_auc": 0.7624
+  },
+  "test_evaluations": {
+    "logistic_regression": {
+      "pr_auc": 0.71578,
+      "roc_auc": 0.97729,
+      "precision": 0.05772,
+      "recall": 0.82692,
+      "f1_score": 0.1079,
+      "log_loss": 0.06914,
+      "true_negatives": 41968,
+      "false_positives": 702,
+      "false_negatives": 9,
+      "true_positives": 43,
+      "false_positive_rate": 0.01645,
+      "false_negative_rate": 0.17308,
+      "eval_threshold": 0.5
+    },
+    "random_forest": {
+      "pr_auc": 0.77156,
+      "roc_auc": 0.96079,
+      "precision": 0.95122,
+      "recall": 0.75,
+      "f1_score": 0.83871,
+      "log_loss": 0.01294,
+      "true_negatives": 42668,
+      "false_positives": 2,
+      "false_negatives": 13,
+      "true_positives": 39,
+      "false_positive_rate": 5e-05,
+      "false_negative_rate": 0.25,
+      "eval_threshold": 0.5
+    },
+    "xgboost_uncalibrated": {
+      "pr_auc": 0.75078,
+      "roc_auc": 0.96746,
+      "precision": 0.65517,
+      "recall": 0.73077,
+      "f1_score": 0.69091,
+      "log_loss": 0.00962,
+      "true_negatives": 42650,
+      "false_positives": 20,
+      "false_negatives": 14,
+      "true_positives": 38,
+      "false_positive_rate": 0.00047,
+      "false_negative_rate": 0.26923,
+      "eval_threshold": 0.5
+    },
+    "xgboost_calibrated": {
+      "pr_auc": 0.75078,
+      "roc_auc": 0.96746,
+      "precision": 0.85714,
+      "recall": 0.69231,
+      "f1_score": 0.76596,
+      "log_loss": 0.00335,
+      "true_negatives": 42664,
+      "false_positives": 6,
+      "false_negatives": 16,
+      "true_positives": 36,
+      "false_positive_rate": 0.00014,
+      "false_negative_rate": 0.30769,
+      "eval_threshold": 0.5
+    },
+    "isolation_forest": {
+      "pr_auc": 0.04316,
+      "roc_auc": 0.9289,
+      "precision": 0.06009,
+      "recall": 0.53846,
+      "f1_score": 0.10811,
+      "log_loss": 0.15685,
+      "true_negatives": 42232,
+      "false_positives": 438,
+      "false_negatives": 24,
+      "true_positives": 28,
+      "false_positive_rate": 0.01026,
+      "false_negative_rate": 0.46154,
+      "eval_threshold": 0.5
+    },
+    "lof": {
+      "pr_auc": 0.001,
+      "roc_auc": 0.40662,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "log_loss": 0.01058,
+      "true_negatives": 42670,
+      "false_positives": 0,
+      "false_negatives": 52,
+      "true_positives": 0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 1.0,
+      "eval_threshold": 0.5
+    },
+    "hybrid_risk_engine": {
+      "pr_auc": 0.66475,
+      "roc_auc": 0.93992,
+      "precision": 0.85714,
+      "recall": 0.69231,
+      "f1_score": 0.76596,
+      "log_loss": 0.01609,
+      "true_negatives": 42664,
+      "false_positives": 6,
+      "false_negatives": 16,
+      "true_positives": 36,
+      "false_positive_rate": 0.00014,
+      "false_negative_rate": 0.30769,
+      "eval_threshold": 0.5
+    }
+  }
+}

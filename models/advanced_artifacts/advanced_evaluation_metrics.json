@@ -1,0 +1,35 @@
+{
+  "model_version": "2.0.0-authentic-ieee",
+  "dataset_source": "Authentic Kaggle IEEE-CIS Fraud Detection Dataset",
+  "total_dataset_rows": 590540,
+  "train_rows": 413378,
+  "val_rows": 88581,
+  "test_rows": 88581,
+  "train_frauds": 14538,
+  "val_frauds": 3042,
+  "test_frauds": 3083,
+  "test_evaluations": {
+    "xgboost_calibrated": {
+      "pr_auc": 0.3346,
+      "roc_auc": 0.805,
+      "precision": 0.7325,
+      "recall": 0.254,
+      "f1_score": 0.3772,
+      "true_positives": 783,
+      "false_positives": 286,
+      "true_negatives": 85212,
+      "false_negatives": 2300
+    },
+    "isolation_forest": {
+      "pr_auc": 0.0591,
+      "roc_auc": 0.6424,
+      "precision": 0.0595,
+      "recall": 0.0931,
+      "f1_score": 0.0726,
+      "true_positives": 287,
+      "false_positives": 4540,
+      "true_negatives": 80958,
+      "false_negatives": 2796
+    }
+  }
+}

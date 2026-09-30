@@ -1,0 +1,9 @@
+{
+  "model_name": "local_outlier_factor",
+  "version": "1.0.0",
+  "algorithm": "LOFAnomalyDetector",
+  "parameters": {},
+  "feature_columns": [],
+  "metrics": {},
+  "created_at": "2026-09-23T18:48:44.416804+00:00"
+}

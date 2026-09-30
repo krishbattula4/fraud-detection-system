@@ -1,0 +1,9 @@
+{
+  "model_name": "preprocessor",
+  "version": "1.0.0",
+  "algorithm": "DataPreprocessor",
+  "parameters": {},
+  "feature_columns": [],
+  "metrics": {},
+  "created_at": "2026-09-23T18:48:44.360244+00:00"
+}
