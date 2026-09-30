@@ -20,7 +20,7 @@ https://fraud-detection-system-ucb3zmzfppvaqnwe6cu5gn.streamlit.app/
 FastAPI Backend
 
 API:
-https://fraud-detection-system-z5g1.onrender.com/
+https://fraud-detection-system-z5g1.onrender.com/docs
 
 Health Check:
 https://fraud-detection-system-z5g1.onrender.com/health
